@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GerenciadorTarefas</name>
+    </assembly>
+    <members>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.Buscar(System.Nullable{System.Int32})">
+            <summary>
+            Busca a tarefa que contem o id informado.
+            </summary>
+            <param name="id">Informe o id da tarefa a ser pesquisada</param>
+            <returns>A tarefa pesquisada</returns>
+            <response code="200">Se a atualização ocorrer corretamente</response>
+            <response code="404">Se não encontrar tarefas</response>
+        </member>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.Criar(GerenciadorTarefas.Models.Tarefa)">
+            <summary>
+            Atualiza os dados da tarefa que contem o id informado.
+            </summary>
+            <returns>Retorna a tarefa criada</returns>
+            <response code="200">Se a criação ocorrer corretamente</response>
+        </member>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.Atualizar(System.Int32,GerenciadorTarefas.Models.Tarefa)">
+            <summary>
+            Atualiza os dados da tarefa que contem o id informado.
+            </summary>
+            <param name="id">Informe o id da tarefa a ser atualizada</param>
+            <returns>A tarefa atualizada</returns>
+            <response code="200">Se a atualização ocorrer corretamente</response>
+            <response code="201">Se a pesquisa encontrar dados</response>
+            <response code="404">Se não encontrar tarefas</response>
+        </member>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.Deletar(System.Int32)">
+            <summary>
+            Deleta a tarefa que contém o id informado.
+            </summary>
+            <param name="id">Informe o id da tarefa</param>
+            <returns>Não retorna conteúdo</returns>
+            <response code="201">Se a deleção ocorrer com sucesso</response>
+            <response code="404">Se não encontrar tarefas</response>
+        </member>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.ObterTodos">
+            <summary>
+            Busca a lista de tarefas.
+            </summary>
+            <returns>A lista de todas as tarefas</returns>
+            <response code="201">Se a pesquisa encontrar dados</response>
+            <response code="404">Se não encontrar tarefas</response>
+        </member>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.ObterPorTitulo(System.String)">
+            <summary>
+            Busca tarefas pelo título informado.
+            </summary>
+            <param name="titulo">Informe o título a ser pesquisado</param>
+            <returns>A lista de tarefas que contêm o título informado</returns>
+            <response code="201">Se a pesquisa encontrar dados</response>
+            <response code="404">Se não encontrar tarefas</response>
+        </member>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.ObterPorData(System.DateTime)">
+            <summary>
+            Busca tarefas pela data informada.
+            </summary>
+            <param name="data">Informe a data no formato yyy-MM-dd</param>
+            <returns>A lista de tarefas que contêm a data informada</returns>
+            <response code="201">Se a pesquisa encontrar dados</response>
+            <response code="404">Se não encontrar tarefas</response>
+        </member>
+        <member name="M:GerenciadorTarefas.Controllers.TarefaController.ObterPorStatus(System.String)">
+            <summary>
+            Busca tarefas pelo status informado.
+            </summary>
+            <param name="status">Pendente ou Finalizado</param>
+            <returns>A lista de tarefas que contêm o status informado</returns>
+            <response code="201">Se a pesquisa encontrar dados</response>
+            <response code="404">Se não encontrar tarefas</response>
+        </member>
+        <member name="T:GerenciadorTarefas.Migrations.criarTabelaTarefas">
+            <inheritdoc />
+        </member>
+        <member name="M:GerenciadorTarefas.Migrations.criarTabelaTarefas.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GerenciadorTarefas.Migrations.criarTabelaTarefas.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GerenciadorTarefas.Migrations.criarTabelaTarefas.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
